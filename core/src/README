@@ -1,0 +1,53 @@
+MazeRunnerGame:
+Project Structure:
+    Screens:
+    -GameScreen:
+        -Contains objects like the character, map, enemies and items.
+        -Implements a render function that executes necessary methods 60 times a second.
+    -MenuScreen
+        -Allows choosing the map to play.
+    -GameOverScreen
+        -Opens when the Character has 0 lives.
+    -VictoryScreen
+        -Opens when the Character reaches the exit with the key.
+
+    Map:
+    -Manages all textures for characters, walls etc.
+    -Reads the map file and creates matrices for items, traps etc.
+
+    Character:
+    -Starts with 3 lives and no key.
+    -Implements methods to check if a move is valid or if the character loses a life.
+ 
+    Enemy:
+    -Extends the Character class
+    -Walks randomly
+
+    Items:
+        -SpeedPotion:
+            -Makes Character faster.
+        -ExtraHeart:
+            -Gives the Character an extra Heart.
+
+How to Play
+    Choose level:
+    Choose one of 5 levels or choose a file.
+    Controls:
+    Use arrow keys for character movement.
+    Press 'ESC' to pause the game.
+    Game Mechanics:
+    Navigate the maze, avoiding enemies.
+    Collect items for enhanced abilities.
+    Get the key for the Exit.
+    Reach the exit with the key to win.
+    Scoring:
+    Gain points for collecting hearts and reaching the exit.
+    Score displayed on victory screen.
+
+Special Features
+    Pause and Resume:
+    Press 'ESC' to pause; press 'Enter' to resume.
+    Score System:
+    Points awarded for collecting extra hearts and completing the maze.
+    Items:
+    Collect extra hearts and speed potions.
